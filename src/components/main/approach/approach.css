@@ -1,0 +1,46 @@
+.approach {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.approach__text {
+  background: linear-gradient(
+      rgba(252, 252, 252, 0.75),
+      rgba(248, 248, 248, 0.75)
+    ),
+    url("./approachimg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 100px;
+  color: #000;
+  text-align: center;
+}
+
+.approach__text p {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.approach__text h3 {
+  font-size: 22px;
+}
+
+.approach__text h3 span {
+  color: rgb(226, 164, 5);
+}
+
+@media screen and (max-width: 768px) {
+  .approach {
+    gap: 20px;
+  }
+
+  .approach__text {
+    padding: 20px;
+  }
+
+  .approach__text p {
+    margin-top: 25px;
+  }
+}

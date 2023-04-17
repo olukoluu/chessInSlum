@@ -1,0 +1,132 @@
+.potential {
+  margin-top: 40px;
+  padding: 20px 100px;
+  background-color: rgb(250, 249, 249);
+}
+
+.potential__head {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.potential__head .head__imgs {
+  width: 50%;
+  position: relative;
+}
+
+.potential__head .head__imgs img {
+  width: 60%;
+  position: absolute;
+  border-radius: 20px;
+  filter: grayscale(20);
+  padding: 5px;
+  border-left: 1px solid goldenrod;
+  border-top: 1px solid goldenrod;
+}
+
+.potential__head .head__imgs img:nth-of-type(2) {
+  width: 380px;
+  top: 130px;
+  right: -2%;
+  padding: 5px;
+  border: none;
+  border-right: 1px solid goldenrod;
+  border-bottom: 1px solid goldenrod;
+}
+
+.potential__head .head__text {
+  margin: 50px 0 50px 50px;
+  width: 45%;
+  float: right;
+  text-align: end;
+  font-size: 32px;
+}
+
+.potential__head .head__text p {
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+.potential__cards {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.potential__card {
+  position: relative;
+  width: 40%;
+  padding: 60px 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba(148, 148, 148, 0.562);
+  text-align: center;
+  font-size: 20px;
+}
+
+.chess__icon {
+  position: absolute;
+  right: 45%;
+  top: -15%;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #000;
+  color: antiquewhite;
+}
+
+.potential .btn {
+  display: block;
+  padding: 10px 50px;
+  margin: 40px auto;
+  border-radius: 20px;
+  background-color: goldenrod;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .potential {
+    padding: 20px;
+  }
+
+  .potential__head {
+    flex-direction: column;
+  }
+
+  .potential__head .head__imgs {
+    width: 100%;
+  }
+
+  .potential__head .head__imgs img:nth-of-type(2) {
+    width: 220px;
+    top: 80px;
+  }
+
+  .potential__head .head__text {
+    margin: 220px 0 50px;
+    width: 100%;
+    text-align: start;
+    font-size: 24px;
+  }
+
+  .potential__head .head__text p {
+    font-size: 18px;
+  }
+
+  .potential__cards {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .potential__card {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .chess__icon {
+    right: 40%;
+  }
+}

@@ -1,0 +1,100 @@
+footer{
+    padding: 20px 100px;
+    background-color: rgb(223, 221, 221);
+}
+
+.newsletter{
+    padding: 50px;
+    background: #0d0d0d;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.newsletter #email{
+    position: relative;
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #1f1f1f;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+
+.newsletter .input{
+    position: relative;
+}
+
+.newsletter .input .btn{
+    width: 12%;
+    position: absolute;
+    top: 6.6px;
+    right: 25.6%;
+    background-color: goldenrod;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+}
+
+.foot{
+    margin-top: 80px;
+    display: flex;
+    gap: 180px;
+    align-items: center;
+}
+
+.foot img{
+    width: 80px;
+}
+
+.foot__link{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.foot__link h4{
+    color: #303030;
+    cursor: pointer;
+}
+
+small{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: goldenrod;
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        padding: 10px;
+    }
+    
+.newsletter{
+    padding: 20px;
+    font-size: 16px;
+}
+
+.newsletter #email{
+    width: 100%;
+    font-size: 13px;
+}
+
+.newsletter .input .btn{
+    width: 35%;
+    top: 5.2px;
+    right: 2%;
+    font-weight: 500;
+}
+
+.foot{
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+}

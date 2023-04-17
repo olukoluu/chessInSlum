@@ -1,0 +1,88 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  box-shadow: 0 0 7px ;
+  z-index: 10;
+}
+
+
+.nav__link {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link a:first-of-type{
+  font-weight: 700;
+  color: #000;
+}
+
+nav .btn {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: rgb(216, 168, 46);
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: rgb(190, 154, 62);
+}
+
+nav .menu__icon {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0;
+    padding: 15px 15px;
+    box-shadow: 0px 0px 7px rgb(192, 189, 189);
+  }
+
+  .nav__link {
+    margin-right: -100%;
+    position: fixed;
+    top: 78px;
+    right: 0;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #f5f5f5;
+    width: 80%;
+    padding: 50px 30px;
+    box-shadow: 1px 4px 7px rgba(150, 149, 149, 0.514);
+    transition: 1s ease-in-out;
+  }
+  .nav__link a{
+    padding: 10px;
+    border-bottom: 1px solid #000;
+  }
+  nav h2 {
+    margin: 10px auto;
+  }
+
+  nav .menu__icon {
+    display: block;
+    font-size: 30px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .menu__active {
+    margin-right: 0;
+  }
+}

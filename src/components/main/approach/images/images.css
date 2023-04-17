@@ -1,0 +1,36 @@
+.imgs__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.imgs__container img {
+  border-radius: 20px;
+  width: 25%;
+  height: 60vh;
+}
+
+.imgs__container img:nth-of-type(even) {
+  height: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+  .imgs__container {
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+  }
+
+  .imgs__container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .imgs__container img {
+    width: 50%;
+    height: 40vh;
+  }
+
+  .imgs__container img:nth-of-type(even) {
+    height: 30vh;
+  }
+}
